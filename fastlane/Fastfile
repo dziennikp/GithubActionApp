@@ -4,6 +4,6 @@ default_platform(:ios)
 platform :ios do
   desc "Description of what the lane does"
   lane :deploy do
-    scan()
+    scan(scheme: ENV["Schema"])
   end
 end
